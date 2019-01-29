@@ -121,6 +121,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 381119443}
+  - component: {fileID: 381119444}
+  - component: {fileID: 381119445}
   m_Layer: 0
   m_Name: Stage
   m_TagString: Untagged
@@ -147,6 +149,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 97.70801, y: 66.714, z: 64.54199}
+--- !u!114 &381119444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381119442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68dbb03296ce64a6c82ff72d8ce290a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &381119445
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381119442}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &420525546
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,6 +442,7 @@ GameObject:
   - component: {fileID: 1021355211}
   - component: {fileID: 1021355215}
   - component: {fileID: 1021355216}
+  - component: {fileID: 1021355217}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -520,6 +551,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ogRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1021355217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021355210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c474ddf97f9c411ebfa78d1dbb42194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ogRotation: {x: 0, y: 0, z: 0, w: 0}
+  newRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1174272405
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,13 +640,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174272405}
-  m_LocalRotation: {x: 0.21771473, y: 0.0023073414, z: 0.010343174, w: 0.97595495}
-  m_LocalPosition: {x: 0.86, y: -5.32, z: -14.18}
+  m_LocalRotation: {x: 0.22955206, y: -0.123706535, z: -0.06307333, w: 0.96334016}
+  m_LocalPosition: {x: 2.97, y: -5.52, z: -14.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 25.145, y: 0.57000005, z: 1.342}
+  m_LocalEulerAnglesHint: {x: 25.256, y: -17.191, z: -11.371}
 --- !u!1 &1673608594
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +752,7 @@ GameObject:
   - component: {fileID: 1828602847}
   - component: {fileID: 1828602851}
   - component: {fileID: 1828602852}
+  - component: {fileID: 1828602853}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -816,6 +862,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ogRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1828602853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828602846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c474ddf97f9c411ebfa78d1dbb42194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ogRotation: {x: 0, y: 0, z: 0, w: 0}
+  newRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1847024691
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +981,7 @@ GameObject:
   - component: {fileID: 1867775693}
   - component: {fileID: 1867775697}
   - component: {fileID: 1867775698}
+  - component: {fileID: 1867775699}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1029,6 +1090,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ogRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1867775699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867775692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c474ddf97f9c411ebfa78d1dbb42194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ogRotation: {x: 0, y: 0, z: 0, w: 0}
+  newRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2048659825
 GameObject:
   m_ObjectHideFlags: 0
